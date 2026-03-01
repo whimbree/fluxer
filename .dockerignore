@@ -37,9 +37,10 @@
 **/Thumbs.db
 **/yarn-debug.log*
 **/yarn-error.log*
-/fluxer_app/src/data/emojis.json
-/fluxer_app/src/locales/*/messages.js
 dev
 !fluxer_app/dist
 !fluxer_app/dist/**
+# Add exceptions for build scripts (the **/build pattern catches them):
+!fluxer_app/scripts/build
+!fluxer_app/scripts/build/**
 !fluxer_devops/cassandra/migrations

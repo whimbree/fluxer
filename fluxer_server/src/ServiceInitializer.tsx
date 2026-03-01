@@ -289,10 +289,10 @@ function createAppServerInitializer(context: ServiceInitializationContext): Serv
 		cspDirectives: {
 			defaultSrc: ["'self'"],
 			scriptSrc: ["'self'", "'unsafe-inline'"],
-			styleSrc: ["'self'", "'unsafe-inline'"],
-			imgSrc: ["'self'", 'data:', 'blob:', publicUrlHost, mediaUrlHost],
+			styleSrc: ["'self'", "'unsafe-inline'", 'https://fluxerstatic.com'],
+			imgSrc: ["'self'", 'data:', 'blob:', publicUrlHost, mediaUrlHost, 'https://fluxerstatic.com'],
 			connectSrc: ["'self'", 'wss:', 'ws:', publicUrlHost],
-			fontSrc: ["'self'"],
+			fontSrc: ["'self'", 'https://fluxerstatic.com'],
 			mediaSrc: ["'self'", 'blob:', mediaUrlHost],
 			frameSrc: ["'none'"],
 		},

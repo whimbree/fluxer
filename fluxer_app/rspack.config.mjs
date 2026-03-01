@@ -35,7 +35,7 @@ const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const PKGS_DIR = path.join(ROOT_DIR, 'pkgs');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'assets');
 
-const CDN_ENDPOINT = 'https://fluxerstatic.com';
+const CDN_ENDPOINT = 'FLUXER_CDN_ENDPOINT' in process.env ? process.env.FLUXER_CDN_ENDPOINT : 'https://fluxerstatic.com';
 
 function resolveMode() {
 	const modeIndex = process.argv.indexOf('--mode');
