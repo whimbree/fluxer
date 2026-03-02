@@ -57,11 +57,7 @@ export function setHeaders(
 	});
 
 	if (range) {
-		const length = range.end - range.start + 1;
 		ctx.status(206);
-		ctx.header('Content-Length', length.toString());
 		ctx.header('Content-Range', `bytes ${range.start}-${range.end}/${size}`);
-	} else {
-		ctx.header('Content-Length', size.toString());
 	}
 }
