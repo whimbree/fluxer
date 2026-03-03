@@ -44,7 +44,7 @@ jobs:
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: |
-            BASE_DOMAIN=fluxer.bspwr.com
+            BASE_DOMAIN=chat.gaybottoms.org
             FLUXER_CDN_ENDPOINT=
             INCLUDE_NSFW_ML=true
             BUILD_SHA=${{ github.sha }}
