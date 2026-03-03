@@ -87,8 +87,8 @@ export const EMOJI_MAX_SIZE = 384 * 1024;
 export const EMOJI_EXTENSIONS = new Set(['jpeg', 'png', 'apng', 'webp', 'gif', 'avif']);
 export const STICKER_MAX_SIZE = 512 * 1024;
 export const STICKER_EXTENSIONS = new Set(['png', 'gif', 'apng', 'webp', 'avif']);
-export const ATTACHMENT_MAX_SIZE_PREMIUM = 500 * 1024 * 1024;
-export const ATTACHMENT_MAX_SIZE_NON_PREMIUM = 25 * 1024 * 1024;
+export const ATTACHMENT_MAX_SIZE_PREMIUM = 10 * 1024 * 1024 * 1024;
+export const ATTACHMENT_MAX_SIZE_NON_PREMIUM = 10 * 1024 * 1024 * 1024;
 
 export const MAX_MESSAGES_PER_CHANNEL = 30;
 export const MAX_LOADED_MESSAGES = MAX_MESSAGES_PER_CHANNEL * 4;

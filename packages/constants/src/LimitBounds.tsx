@@ -32,7 +32,7 @@ export const LIMIT_KEY_BOUNDS: Record<LimitKey, {min: number; max: number}> = {
 	feature_higher_video_quality: {min: 0, max: 1},
 	feature_per_guild_profiles: {min: 0, max: 1},
 	feature_voice_entrance_sounds: {min: 0, max: 1},
-	max_attachment_file_size: {min: 0, max: 500 * 1024 * 1024},
+	max_attachment_file_size: {min: 0, max: 10 * 1024 * 1024 * 1024},
 	max_attachments_per_message: {min: 1, max: 10},
 	max_bio_length: {min: 1, max: 320},
 	max_bookmarks: {min: 0, max: 300},
